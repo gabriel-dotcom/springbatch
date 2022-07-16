@@ -44,7 +44,7 @@ public class SpringbatchApplication {
 		return stepBuilderFactory.get("stepTwo").tasklet(new Tasklet() {
 			@Override
 			public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception {
-				System.out.println("Step one");
+				System.out.println("Step two");
 				return RepeatStatus.FINISHED;
 			}
 		}).build();
